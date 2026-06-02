@@ -42,7 +42,7 @@ Include the following:
 
 # Part 2 - Data Sourcing
 
-## 2.1 Load in the data
+## 2.1 Load in the data 100
 
 Preferably from a URL, but if not, make sure to download the data and store it in a shared location that you can load the data in from. Do not store the data in a folder you include in the Github repository!
 
