@@ -16,12 +16,22 @@ require(yaml)
 
 # Title Page
 
-Include your names\
-Koen Thomas Tim Timo Daniel
+Teammembers:\
+Koen Damen (2889378)
 
-Include the tutorial group number 5 1351234135
+Thomas Dop (2898269)
 
-Include your tutorial lecturer's name
+Tim de Marez Oyens ()
+
+Timo Bakker (2863621)
+
+Daniel Ferrier ()
+
+Clémence van Gils ()
+
+Tutorial 5 Group 3
+
+Tutorial lecturer: Simon Loop
 
 Simon Loop
 
@@ -31,11 +41,12 @@ Use APA referencing throughout your document. [Here's a link to some explanation
 
 ## 1.1 Describe the Social Problem
 
-Include the following:
+The GDP-Happiness Disconnect\
+Governments often use GDP as a measure of how well a society is doing. Data from the WHR (World Happiness Report) shows that a growth in GDP does not automatically mean an increase in the happiness of the citicens
 
-- Why is this relevant?
+... its important
 
-- ...
+- 
 
 # Part 2 - Data Sourcing
 
