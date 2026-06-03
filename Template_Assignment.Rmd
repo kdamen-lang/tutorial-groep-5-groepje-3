@@ -12,6 +12,7 @@ install.packages("rmarkdown")
 require(tidyverse)
 require(rmarkdown)
 require(yaml)
+require(readxl)
 ```
 
 # Title Page
@@ -21,7 +22,7 @@ Koen Damen (2889378)
 
 Thomas Dop (2898269)
 
-Tim de Marez Oyens ()
+Tim de Marez Oyens (2882348)
 
 Timo Bakker (2863621)
 
@@ -56,6 +57,12 @@ Preferably from a URL, but if not, make sure to download the data and store it i
 
 ```{r loading_data}
 dataset <- midwest
+
+#data <- read_xlsx("/Users/timdemarezoyens/Documents/imf-dm-export-20260603-2.xlsx")
+#saveRDS(data, "data/dataset")
+
+
+
 ```
 
 midwest is an example dataset included in the tidyverse package
