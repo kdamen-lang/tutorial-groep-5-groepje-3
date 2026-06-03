@@ -39,14 +39,22 @@ Simon Loop
 
 Use APA referencing throughout your document. [Here's a link to some explanation.](https://www.mendeley.com/guides/apa-citation-guide/)
 
-## 1.1 Describe the Social Problem
+## 1.1 The GDP-Happiness Disconnect 
 
-The GDP-Happiness Disconnect\
-Governments often use GDP as a measure of how well a society is doing. Data from the WHR (World Happiness Report) shows that a growth in GDP does not automatically mean an increase in the happiness of the citicens
+Governments often use GDP as a measure of how well a society is doing. Data from the WHR (World Happiness Report) shows that a growth in GDP does not automatically mean an increase in the happiness of the citizens.\
+\
+While people in richer countries are generally happier compared to those in poorer countries, this correlation stops working at a certain point. Once a country has reached a certain amount of wealth, needed to secure basic needs like food, healthcare and housing, more economic growth does **not** make the people happier. This gap between the rising wealth and stagnant happiness is a big social problem. It proves that only focussing on economic growth can cause the leaders of a country to ignore deeper underlying human needs.\
 
-... its important
+Why this is relevant
 
-- 
+- GDP blindsides policy makers\
+  The GDP of a country can grow whilst its people face rising depression and loneliness. Relying only on financial metrics leaves governments blind to these social problems.
+
+- The Easterlin Paradox\
+  After basic needs are met, happiness depends on non-economic factors. Things like social support, public safety and freedom matter a lot more than extra wealth.
+
+Wealth inequality\
+GDP measures total wealth per citizen, but not how it is shared. If economic growth only benefits a small elite group while the cost of living for the majority of people rises, overall happiness will drop
 
 # Part 2 - Data Sourcing
 
