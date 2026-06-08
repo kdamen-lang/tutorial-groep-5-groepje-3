@@ -68,7 +68,8 @@ dataset <- midwest
 
 #data <- read_xlsx("/Users/timdemarezoyens/Documents/imf-dm-export-20260603-2.xlsx")
 #saveRDS(data, "data/dataset")
-
+dataset1 <- read.csv("data/dataset1.csv")
+dataset2 <- read.csv("data/dataset2.csv")
 
 
 ```
