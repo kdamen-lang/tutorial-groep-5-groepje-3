@@ -40,7 +40,7 @@ Simon Loop
 
 Use APA referencing throughout your document. [Here's a link to some explanation.](https://www.mendeley.com/guides/apa-citation-guide/)
 
-## 1.1 The GDP-Happiness Disconnect 
+## 1.1 The GDP-Happiness Disconnect
 
 Governments often use GDP as a measure of how well a society is doing. Data from the WHR (World Happiness Report) shows that a growth in GDP does not automatically mean an increase in the happiness of the citizens.\
 \
