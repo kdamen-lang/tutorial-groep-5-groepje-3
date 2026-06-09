@@ -66,9 +66,11 @@ Preferably from a URL, but if not, make sure to download the data and store it i
 ```{r loading_data}
 
 
+#dataset1 <- read.csv("/Users/bakkertje/Downloads/data_20260609135240.csv")
 
+#write.csv(dataset1, "data/dataset1")
 
-
+dataset1 <- read.csv("data/dataset1")
 
 
 
