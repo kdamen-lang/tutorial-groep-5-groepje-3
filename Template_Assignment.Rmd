@@ -42,7 +42,9 @@ Use APA referencing throughout your document. [Here's a link to some explanation
 
 ## 1.1 The Relationship Between GDP Growth and Unemployment
 
-GDP is one of the most important economic indicators. GDP measures the total value of all goods and services produced in a country . Governments often use GDP as a measure of how well a society is doing. If GDP falls, consumption and investment will decline, and people will lose their jobs. This will lead to a rise in the unemployment rate. Conversely, if GDP grows, the unemployment rate will actually fall, as more investments are made, consumption increases, and, as a result, more people will be hired. In addition, high unemployment entails high costs for the government.
+Governments often use GDP as a measure of how well a society is doing. Data from the WHR (World Happiness Report) shows that a growth in GDP does not automatically mean an increase in the happiness of the citizens.\
+\
+While people in richer countries are generally happier compared to those in poorer countries, this correlation stops working at a certain point. Once a country has reached a certain amount of wealth, needed to secure basic needs like food, healthcare and housing, more economic growth does **not** make the people happier. This gap between the rising wealth and stagnant happiness is a big social problem. It proves that only focussing on economic growth can cause the leaders of a country to ignore deeper underlying human needs.\
 
 That is why it is important to conduct research to gain insight into the relationship between unemployment and GDP. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment.
 
@@ -55,12 +57,17 @@ Preferably from a URL, but if not, make sure to download the data and store it i
 ```{r loading_data}
 
 
-#data <- read_xlsx("/Users/timdemarezoyens/Documents/imf-dm-export-20260603-2.xlsx")
-#saveRDS(data, "data/dataset")
+#dataset1 <- read.csv("/Users/bakkertje/Downloads/data_20260609135240.csv")
 
-dataset1 <- read.csv("data/dataset1.csv")
-dataset2 <- read.csv("data/dataset2.csv")
+#write.csv(dataset1, "data/dataset1")
 
+dataset1 <- read.csv("data/dataset1")
+
+#dataset2 <- read.csv("/Users/bakkertje/Downloads/data_20260609135110.csv")
+
+#write.csv(dataset2, "data/dataset2")
+
+dataset2 <- read.csv("data/dataset2")
 
 
 
