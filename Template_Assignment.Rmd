@@ -26,7 +26,7 @@ Tim de Marez Oyens (2882348)
 
 Timo Bakker (2863621)
 
-Daniel Ferrier (mannetje moet nog invullen
+Daniel Ferrier (2900731)
 
 Clémence van Gils (2898031)
 
@@ -92,7 +92,14 @@ midwest is an example dataset included in the tidyverse package
 ## 2.2 Provide a short summary of the dataset(s)
 
 ```{r}
-head(dataset)
+names(dataset1)
+names(dataset2)
+head(dataset1)
+head(dataset2)
+
+dim(dataset1)
+dim(dataset2)
+
 ```
 
 In this case we see 28 variables, but we miss some information on what units they are in. We also don't know anything about the year/moment in which this data has been captured.
