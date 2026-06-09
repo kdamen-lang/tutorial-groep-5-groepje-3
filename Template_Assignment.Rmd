@@ -40,20 +40,11 @@ Simon Loop
 
 Use APA referencing throughout your document. [Here's a link to some explanation.](https://www.mendeley.com/guides/apa-citation-guide/)
 
-## 1.1 The GDP-Happiness Disconnect
+## 1.1 The Relationship Between GDP Growth and Unemployment
 
 GDP is one of the most important economic indicators. GDP measures the total value of all goods and services produced in a country . Governments often use GDP as a measure of how well a society is doing. If GDP falls, consumption and investment will decline, and people will lose their jobs. This will lead to a rise in the unemployment rate. Conversely, if GDP grows, the unemployment rate will actually fall, as more investments are made, consumption increases, and, as a result, more people will be hired. In addition, high unemployment entails high costs for the government.
 
-Why this is relevant
-
-- GDP blindsides policy makers\
-  The GDP of a country can grow whilst its people face rising depression and loneliness. Relying only on financial metrics leaves governments blind to these social problems.
-
-- The Easterlin Paradox\
-  After basic needs are met, happiness depends on non-economic factors. Things like social support, public safety and freedom matter a lot more than extra wealth.
-
-- Wealth inequality\
-  GDP measures total wealth per citizen, but not how it is shared. If economic growth only benefits a small elite group while the cost of living for the majority of people rises, overall happiness will drop
+That is why it is important to conduct research to gain insight into the relationship between unemployment and GDP. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment.
 
 # Part 2 - Data Sourcing
 
