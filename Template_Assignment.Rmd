@@ -67,7 +67,19 @@ dataset1 <- read.csv("data/dataset1")
 
 dataset2 <- read.csv("data/dataset2")
 
+dataset1$X <- NULL
+dataset1$Alpha3Code <- NULL
+dataset1$CountryCode <- NULL
+dataset1$IndicatorCode <- NULL
+dataset1$X.1 <- NULL
 
+
+
+dataset2$IndicatorCode <- NULL
+dataset2$X.1 <- NULL
+dataset2$CountryCode <- NULL
+dataset2$Alpha3Code <- NULL
+dataset2$X <- NULL
 
 
 
@@ -79,6 +91,8 @@ dataset2 <- read.csv("data/dataset2")
 midwest is an example dataset included in the tidyverse package
 
 ## 2.2 Provide a short summary of the dataset(s)
+
+Dataset 1
 
 set 1 heeft x landen zoveel jaar, x waarde is xxxxx, in data set 2 is het gdp met purchasing power\
 \
@@ -120,19 +134,8 @@ Think of things like:
 Say we want to include only larger distances (above 2) in our dataset, we can filter for this.\
 i
 
-```{dataset1$X <- NULL}
-dataset1$Alpha3Code <- NULL
-dataset1$CountryCode <- NULL
-dataset1$IndicatorCode <- NULL
-dataset1$X.1 <- NULL
-
-
-
-dataset2$IndicatorCode <- NULL
-dataset2$X.1 <- NULL
-dataset2$CountryCode <- NULL
-dataset2$Alpha3Code <- NULL
-dataset2$X <- NULL
+```{r data_cleaning}
+mean(dataset$percollege)
 ```
 
 Please use a separate 'R block' of code for each type of cleaning. So, e.g. one for missing values, a new one for removing unnecessary variables etc.
