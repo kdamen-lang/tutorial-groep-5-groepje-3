@@ -134,8 +134,8 @@ Say we want to include only larger distances (above 2) in our dataset, we can fi
 <<<<<<< Updated upstream
 ```{r data_cleaning}
 mean(dataset$percollege)
-=======
-```{r}
+
+
 dataset1_cleaned <- dataset1 %>%
   select(CountryCode, IndicatorName, PeriodCode , Value)
 
@@ -143,7 +143,6 @@ dataset1_cleaned <- dataset1 %>%
 dataset2-cleaned <- dataset2 %>% 
   select()
 
->>>>>>> Stashed changes
 ```
 
 ## 3.2 
