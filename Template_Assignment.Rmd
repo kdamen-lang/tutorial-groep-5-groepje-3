@@ -67,6 +67,7 @@ dataset1 <- read.csv("data/dataset1")
 
 dataset2 <- read.csv("data/dataset2")
 
+<<<<<<< HEAD
 dataset1$X <- NULL
 dataset1$Alpha3Code <- NULL
 dataset1$CountryCode <- NULL
@@ -74,6 +75,13 @@ dataset1$IndicatorCode <- NULL
 dataset1$X.1 <- NULL
 
 
+=======
+dataset2$IndicatorCode <- NULL
+dataset2$X.1 <- NULL
+dataset2$CountryCode <- NULL
+dataset2$Alpha3Code <- NULL
+dataset2$X <- NULL
+>>>>>>> 7584ae3b2a19dc5648eca27c5605dfca40e78254
 
 
 
@@ -119,7 +127,8 @@ Think of things like:
 
 ## 3.1 Data cleaning
 
-Say we want to include only larger distances (above 2) in our dataset, we can filter for this.
+Say we want to include only larger distances (above 2) in our dataset, we can filter for this.\
+i
 
 ```{r data_cleaning}
 mean(dataset$percollege)
