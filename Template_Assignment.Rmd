@@ -80,6 +80,10 @@ midwest is an example dataset included in the tidyverse package
 
 ## 2.2 Provide a short summary of the dataset(s)
 
+set 1 heeft x landen zoveel jaar, x waarde is xxxxx, in data set 2 is het gdp met purchasing power\
+\
+minimaal zoveel procetn unemployment enz, hoeveel landen
+
 ```{r}
 names(dataset1)
 names(dataset2)
@@ -134,6 +138,8 @@ dataset2$X <- NULL
 Please use a separate 'R block' of code for each type of cleaning. So, e.g. one for missing values, a new one for removing unnecessary variables etc.
 
 ## 3.2 Generate necessary variables
+
+landen indelen in groepen ofz, voor variabele voor de derdewereldlanden enz, aziatische of idk
 
 Variable 1
 
