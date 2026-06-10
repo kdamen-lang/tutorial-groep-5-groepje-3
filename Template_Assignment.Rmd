@@ -134,15 +134,15 @@ Say we want to include only larger distances (above 2) in our dataset, we can fi
 \<\<\<\<\<\<\< Updated upstream
 
 ```{r data_cleaning}
-mean(dataset$percollege)
+
 
 
 dataset1_cleaned <- dataset1 %>%
-  select(CountryCode, IndicatorName, PeriodCode , Value)
+  select(IndicatorName, CountryName, PeriodCode , Value) 
 
 
-dataset2-cleaned <- dataset2 %>% 
-  select()
+dataset2_cleaned <- dataset2 %>% 
+  select(IndicatorName, CountryName, PeriodCode, Value)
 
 ```
 
