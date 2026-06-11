@@ -220,10 +220,7 @@ library(dplyr)
 plot_data <- elasticity_table %>%
   group_by(PeriodCode) %>%
   summarise(
-    # CHANGE 'Value.y' to whatever your actual GDP column is named
     `Avg GDP per Capita` = mean(Value.y, na.rm = TRUE), 
-    
-    # CHANGE 'Value.x' to whatever your actual Unemployment column is named
     `Avg Unemployment Rate` = mean(Value.x, na.rm = TRUE)
   ) %>%
   tidyr::pivot_longer(
