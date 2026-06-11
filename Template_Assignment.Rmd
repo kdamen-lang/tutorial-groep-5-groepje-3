@@ -6,6 +6,7 @@
 install.packages("tidyverse")
 install.packages("yaml")
 install.packages("rmarkdown")
+install.packages("dplyr")
 ```
 
 ```{r packages}
@@ -13,6 +14,7 @@ require(tidyverse)
 require(rmarkdown)
 require(yaml)
 require(readxl)
+library(dplyr)
 ```
 
 # Title Page
@@ -133,14 +135,18 @@ The column Unnamed: 9 is empty and should be removed during the data-cleaning pr
 
 ```{r data_cleaning}
 
-
-
 dataset1_cleaned <- dataset1 %>%
   select(IndicatorName, CountryName, PeriodCode , Value) 
 
 
 dataset2_cleaned <- dataset2 %>% 
   select(IndicatorName, CountryName, PeriodCode, Value)
+
+merged_data <- inner_join(
+  dataset1_cleaned,
+  dataset2_cleaned,
+  by = c("CountryName", "PeriodCode")
+)
 
 ```
 
@@ -156,6 +162,24 @@ Variable 2
 
 ```{r gen_var2}
 
+library(dplyr)
+
+elasticity_table <- merged_data %>%
+  arrange(CountryName, PeriodCode) %>%
+  group_by(CountryName) %>%
+  mutate(
+    # Ensure both columns are treated as numbers
+    Value.x = as.numeric(Value.x),
+    Value.y = as.numeric(Value.y),
+    
+    # Now run your calculations safely
+    GDPGrowth = ((Value.y - lag(Value.y)) / lag(Value.y)) * 100,
+    UnemploymentChange = Value.x - lag(Value.x),
+    Elasticity = UnemploymentChange / GDPGrowth
+  ) %>%
+  ungroup()
+
+head(elasticity_table)
 ```
 
 ## 3.3 Visualize temporal variation
