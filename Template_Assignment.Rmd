@@ -7,6 +7,7 @@ install.packages("tidyverse")
 install.packages("yaml")
 install.packages("rmarkdown")
 install.packages("dplyr")
+install.packages("ggplot2")
 ```
 
 ```{r packages}
@@ -15,6 +16,7 @@ require(rmarkdown)
 require(yaml)
 require(readxl)
 library(dplyr)
+library(ggplot2)
 ```
 
 # Title Page
@@ -154,8 +156,35 @@ merged_data <- inner_join(
 
 Variable 1
 
+```{r}
+
+library(dplyr)
+
+lagged_gdp_table <- merged_data %>%
+  arrange(CountryName, PeriodCode) %>%
+  group_by(CountryName) %>%
+  mutate(
+    # Force Value.x to be numeric so the math works
+    Value.x = as.numeric(Value.x),
+    
+    # Calculate GDP growth and its lag
+    GDPGrowth = ((Value.x - lag(Value.x)) / lag(Value.x)) * 100,
+    LaggedGDPGrowth = lag(GDPGrowth)
+  ) %>%
+  select(
+    CountryName,
+    PeriodCode,
+    Value.x,
+    GDPGrowth,
+    LaggedGDPGrowth
+  ) %>%
+  ungroup()
+
+head(lagged_gdp_table)
+
+```
+
 ```         
-{r}
 ```
 
 Variable 2
@@ -185,6 +214,37 @@ head(elasticity_table)
 ## 3.3 Visualize temporal variation
 
 ```{r}
+library(ggplot2)
+library(dplyr)
+
+plot_data <- elasticity_table %>%
+  group_by(PeriodCode) %>%
+  summarise(
+    # CHANGE 'Value.y' to whatever your actual GDP column is named
+    `Avg GDP per Capita` = mean(Value.y, na.rm = TRUE), 
+    
+    # CHANGE 'Value.x' to whatever your actual Unemployment column is named
+    `Avg Unemployment Rate` = mean(Value.x, na.rm = TRUE)
+  ) %>%
+  tidyr::pivot_longer(
+    cols = c(`Avg GDP per Capita`, `Avg Unemployment Rate`), 
+    names_to = "Metric", 
+    values_to = "Value"
+  )
+
+# 2. Plot
+ggplot(plot_data, aes(x = PeriodCode, y = Value, color = Metric)) +
+  geom_line(size = 1) +
+  geom_point() +
+  facet_wrap(~Metric, ncol = 1, scales = "free_y") + 
+  scale_x_continuous(breaks = seq(2004, 2024, by = 2)) + 
+  labs(
+    title = "Temporal Variation of GDP per Capita and Unemployment",
+    x = "Year",
+    y = "Average Value"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
 
 ```
 
