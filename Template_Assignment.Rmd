@@ -67,19 +67,7 @@ dataset1 <- read.csv("data/dataset1")
 
 dataset2 <- read.csv("data/dataset2")
 
-dataset1$X <- NULL
-dataset1$Alpha3Code <- NULL
-dataset1$CountryCode <- NULL
-dataset1$IndicatorCode <- NULL
-dataset1$X.1 <- NULL
 
-
-
-dataset2$IndicatorCode <- NULL
-dataset2$X.1 <- NULL
-dataset2$CountryCode <- NULL
-dataset2$Alpha3Code <- NULL
-dataset2$X <- NULL
 
 
 
