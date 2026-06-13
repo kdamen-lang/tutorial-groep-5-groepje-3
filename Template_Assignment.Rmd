@@ -46,7 +46,7 @@ Use APA referencing throughout your document. [Here's a link to some explanation
 
 ## 1.1 The Relationship Between GDP Growth and Unemployment
 
-GDP is one of the most important economic indicators. GDP measures the total value of all goods and services produced in a country . Governments often use GDP as a measure of how well a society is doing. If GDP falls, consumption and investment will decline, and people will lose their jobs. This will lead to a rise in the unemployment rate. Conversely, if GDP grows, the unemployment rate will actually fall, as more investments are made, consumption increases, and, as a result, more people will be hired. In addition, high unemployment entails high costs for the government.
+GDP is one of the most important economic indicators. GDP measures the total value of all goods and services produced in a country . Governments often use GDP as a measure of how well a society is doing. If GDP falls, consumption and investment will decline, and people will lose their jobs. This will lead to a rise in the unemployment rate. Conversely, if GDP grows, the unemployment rate will actually fall, as more investments are made, consumption increases, and, as a result, more people will be hired. (Blanchard et al., 2021) In addition, high unemployment entails high costs for the government.
 
 That is why it is important to conduct research to gain insight into the relationship between unemployment and GDP. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment. In this report we quantify the the relationship between the GDP per capita (*Gross Domestic Product (GDP) per Capita - Data Portal - United Nations Economic Commission for Europe*, n.d.) and the unemployment rate (*Unemployment Rate - Data Portal - United Nations Economic Commission for Europe*, n.d.) from 2005 until 2024.
 
@@ -327,6 +327,8 @@ Here you provide a description of why the plot above is relevant to your specifi
 Provide the link to your PUBLIC repository here: ...
 
 ## 5.2 Reference list
+
+Blanchard, O., Amighini, A., & Giavazzi, F. (2021). *Macroeconomics: a European perspective* (4th ed.) [Macroeconomics]. Pearson Education Limited. <https://www.pearson.com/uk>
 
 *Gross domestic product (GDP) per capita - Data Portal - United Nations Economic Commission for Europe*. (n.d.-b). <https://w3.unece.org/PXWeb/en/Table?IndicatorCode=12>
 
