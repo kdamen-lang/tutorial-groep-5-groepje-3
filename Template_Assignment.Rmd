@@ -122,12 +122,12 @@ These are things that are usually included in the metadata of the dataset. For y
 
 **Data set 1**
 
-Dataset1 is a panel dataset. It contains observations for 55 countries across years. The main variable is the unemployment rate, measured as the percentage of the labour force, shown as the variable Value. This is a continuous quantitative variable. Countries are identified by several variables as CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. Dataset 1 also includes metadata variables like IndicatorCode and VariableName. These variables give information about what is being measured and how it is measured. 
+Dataset1 is a panel dataset. It contains observations for 55 countries across years. The main variable is the unemployment rate, measured as the percentage of the labour force, shown as the variable Value. This is a continuous quantitative variable. Countries are identified by several variables as CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. Dataset 1 also includes metadata variables like IndicatorCode and VariableName. These variables give information about what is being measured and how it is measured.
 
 #### **Data set 2**
 
 <<<<<<< HEAD
-Dataset 2 is also a panel dataset, containing observations for 56 countries across 20 time periods from 2005 - 2024. The main variable is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified in the same way as in Dataset1. The time dimension is represented by the variable PeriodCode. The dataset also includes metadata variables, such as IndicatorCode and IndicatorName. The latter defines what the variable Value is measuring, which is GDP per capita and is the main variable in this dataset. PeriodCode functions as the time variable. Most of these variables have been removed in the cleaning of the data.
+Dataset 2 is also a panel dataset, containing observations for 56 countries across 20 time periods from 2005 - 2024. The main variable is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified in the same way as in Dataset1. The time dimension is represented by the variable PeriodCode. The dataset also includes metadata variables, such as IndicatorCode and IndicatorName. The latter defines what the variable Value is measuring, which is GDP per capita and is the mainvariable in this dataset. PeriodCode functions as the time variable. Most of these variables have been removed in the cleaning of the data.
 =======
 *For the sake of this example, I will continue with the assignment...*
 
