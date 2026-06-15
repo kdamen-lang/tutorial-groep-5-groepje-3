@@ -56,11 +56,10 @@ Use APA referencing throughout your document. [Here's a link to some explanation
 
 GDP is one of the most important economic indicators. It measures the total value of all goods and services produced within a country. Governments often use GDP as a measure of how well a society is doing.
 
-<<<<<<< HEAD
 According to Okun (1962), there is a negative relationship between economic growth and unemployment: if economic activity falls, there is less production and labor demand and then people will lose their jobs. This will lead to a rise in unemployment. Conversely, if economy expands and GDP grows, unemployment will fall, as investment increases, consumption rises and, as a result, more people are hired. (Blanchard et al., 2021) Furthermore, high unemployment entails high costs for the government.
 
 That is why it is important to conduct research to gain insight into the relationship between unemployment and economic performance. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment. In this report we quantify the relationship between the GDP per capita (*Gross Domestic Product (GDP) per Capita - Data Portal - United Nations Economic Commission for Europe*, n.d.) and the unemployment rate (*Unemployment Rate - Data Portal - United Nations Economic Commission for Europe*, n.d.) from 2005 until 2024. GDP per capita is used as a proxy for economic performance.
-=======
+
 That is why it is important to conduct research to gain insight into the relationship between unemployment and GDP. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment. In this report we quantify the the relationship between the GDP per capita (*Gross Domestic Product (GDP) per Capita - Data Portal - United Nations Economic Commission for Europe*, n.d.) and the unemployment rate (*Unemployment Rate - Data Portal - United Nations Economic Commission for Europe*, n.d.) from 2005 until 2024.\
 \
 is gecheckt voor ai
