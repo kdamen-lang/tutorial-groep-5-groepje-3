@@ -311,10 +311,29 @@ Here you provide a description of why the plot above is relevant to your specifi
 Analyze the relationship between two variables.
 
 ```{r analysis}
+library(ggplot2)
 
+merged_data$Value.x <- as.numeric(as.character(merged_data$Value.x))
+merged_data$Value.y <- as.numeric(as.character(merged_data$Value.y))
+
+ggplot(
+  merged_data,
+  aes(
+    x = log(Value.y),
+    y = Value.x
+  )
+) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(
+    title = "Relationship between GDP per Capita and Unemployment",
+    x = "Log GDP per Capita",
+    y = "Unemployment Rate (%)"
+  ) +
+  theme_minimal()
 ```
 
-Here you provide a description of why the plot above is relevant to your specific social problem.
+This figure shows the relationship between GDP per capita and unemployment rates. The downward trend line suggests a negative relationship between the two variables. In general, countries with a higher GDP per capita tend to have lower unemployment rates. This supports the idea that stronger economies often create more employment opportunities. However, the relationship is not perfect, which means that other factors also influence unemployment. This analysis is relevant because unemployment can contribute to poverty, financial insecurity, and social inequality.
 
 # Part 4 - Discussion
 
