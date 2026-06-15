@@ -84,7 +84,7 @@ midwest is an example dataset included in the tidyverse package
 
 ## 2.2 Provide a short summary of the dataset(s)
 
-Dataset1 contains the procentual unemployment rate for 55 countries from 2005 to 2025. Dataset 2 contains the GDP per capita in USD adjusted by purchasing power parities. We have data for 56 countries for the years 2005 - 2024. For some countries we are missing some years of GDP and unemployment value.
+Dataset 1 contains the procentual unemployment rate for 55 countries from 2005 to 2025. Dataset 2 contains the GDP per capita in USD adjusted by purchasing power parities. We have data for 56 countries for the years 2005 to 2024. For some countries we are missing some years of GDP and unemployment value.
 
 ```{r}
 names(dataset1)
