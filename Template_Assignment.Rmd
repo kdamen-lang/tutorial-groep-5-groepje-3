@@ -1,4 +1,14 @@
----100 title: "Template" author: "Studentnames and studentnumbers here" date: "`r Sys.Date()`" output: pdf_document ---
+------------------------------------------------------------------------
+
+title: "The relationship between GDP per Capita and Unemployment"
+
+author: "Tutorial 5 group 3"
+
+date: "`r Sys.Date()`"
+
+output: pdf_document
+
+------------------------------------------------------------------------
 
 # Set-up your environment
 
