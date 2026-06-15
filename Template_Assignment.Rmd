@@ -105,25 +105,13 @@ These are things that are usually included in the metadata of the dataset. For y
 
 ## 2.3 Describe the type of variables included
 
-Think of things like:
+**Data set 1**
 
-- Do the variables contain health information or SES information?
+Dataset1 is a panel dataset. It contains observations for 55 countries across years. The main variable is the unemployment rate, measured as the percentage of the labour force, shown as the variable Value. This is a continuous quantitative variable. Countries are identified by several variables as CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. Dataset 1 also includes metadata variables like IndicatorCode and VariableName. These variables give information about what is being measured and how it is measured. 
 
-- Have they been measured by interviewing individuals or is the data coming from administrative sources?
+#### **Data set 2**
 
-*For the sake of this example, I will continue with the assignment...*
-
-#### Data set 1
-
-The dataset used in this project is a panel dataset, also known as cross-sectional time-series data. It contains observations for 55 countries across 21 time periods. The main variable of interest is the unemployment rate, measured as a percentage of the labour force. This is a continuous quantitative variable. Countries are identified using several country variables, including CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. The dataset also includes metadata variables, such as IndicatorCode, IndicatorName, VariableName, and MeasurementName. These variables provide information about what is being measured and how it is measured. The variable Value represents the unemployment rate and serves as the main dependent variable in the analysis.
-
-At this stage, the dataset only contains unemployment rates and does not include potential explanatory variables such as GDP growth, inflation, education levels, or labour market characteristics. **These aspects should be examined during the data exploration and cleaning phase before further statistical analysis is conducted.**
-
-#### Data set 2
-
-The dataset used in this project is a panel dataset, also known as cross-sectional time-series data. It contains observations for 56 countries across 20 time periods from 2005 - 2024. The main variable of interest is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified using several country variables, including CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. The dataset also includes metadata variables, such as IndicatorCode, IndicatorName, VariableName, and MeasurementName. These variables provide information about what is being measured and how it is measured. The variable Value represents GDP per capita and is the main dependent variable in the analysis. CountryCode, Alpha3Code, and CountryName function as cross-sectional identifiers, while PeriodCode functions as the time variable. Most of these variables have been removed in the cleaning of the data.
-
-At this stage, while GDP per capita is available, the dataset does not provide additional explanatory variables that may influence economic performance. **These aspects should be examined during the data exploration and cleaning phase before further analysis is conducted.**
+Dataset 2 is also a panel dataset, containing observations for 56 countries across 20 time periods from 2005 - 2024. The main variable is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified in the same way as in Dataset1. The time dimension is represented by the variable PeriodCode. The dataset also includes metadata variables, such as IndicatorCode and IndicatorName. The latter defines what the variable Value is measuring, which is GDP per capita and is the main variable in this dataset. PeriodCode functions as the time variable. Most of these variables have been removed in the cleaning of the data.
 
 # Part 3 - Quantifying
 
@@ -345,10 +333,13 @@ This figure shows the relationship between GDP per capita and unemployment rates
 
 Provide the link to your PUBLIC repository here: ...
 
-## 5.2 Reference list
+## 5.2 Reference list 
+
+**Okun, A. M.** (1962). Potential GNP: Its measurement and significance. *Proceedings of the Business and Economic Statistics Section of the American Statistical Association*, 98–104.
 
 Blanchard, O., Amighini, A., & Giavazzi, F. (2021). *Macroeconomics: a European perspective* (4th ed.) [Macroeconomics]. Pearson Education Limited. <https://www.pearson.com/uk>
 
 *Gross domestic product (GDP) per capita - Data Portal - United Nations Economic Commission for Europe*. (n.d.-b). <https://w3.unece.org/PXWeb/en/Table?IndicatorCode=12>
 
-*Unemployment rate - Data Portal - United Nations Economic Commission for Europe*. (n.d.). <https://w3.unece.org/PXWeb/en/Table?IndicatorCode=43>
+*Unemployment rate - Data Portal - United Nations Economic Commission for Europe*. (n.d.). <https://w3.unece.org/PXWeb/en/Table?IndicatorCode=43>\
+\
