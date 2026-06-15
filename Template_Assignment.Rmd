@@ -46,9 +46,9 @@ Use APA referencing throughout your document. [Here's a link to some explanation
 
 GDP is one of the most important economic indicators. GDP measures the total value of all goods and services produced within a country. Governments often use GDP as a measure of how well a society is doing. According to Okun (1962), there is a negative relationship between economic growth and unemployment: if GDP falls, consumption and investment will decline and people will lose their jobs. This will lead to a rise in unemployment. Conversely, if GDP grows, unemployment will fall, as investment increases, consumption rises and, as a result, more people are hired. (Blanchard et al., 2021) Furthermore, high unemployment entails high costs for the government.
 
-Translated with DeepL.com (free version)
-
-That is why it is important to conduct research to gain insight into the relationship between unemployment and GDP. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment. In this report we quantify the the relationship between the GDP per capita (*Gross Domestic Product (GDP) per Capita - Data Portal - United Nations Economic Commission for Europe*, n.d.) and the unemployment rate (*Unemployment Rate - Data Portal - United Nations Economic Commission for Europe*, n.d.) from 2005 until 2024.
+That is why it is important to conduct research to gain insight into the relationship between unemployment and GDP. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment. In this report we quantify the the relationship between the GDP per capita (*Gross Domestic Product (GDP) per Capita - Data Portal - United Nations Economic Commission for Europe*, n.d.) and the unemployment rate (*Unemployment Rate - Data Portal - United Nations Economic Commission for Europe*, n.d.) from 2005 until 2024.\
+\
+is gecheckt voor ai
 
 # Part 2 - Data Sourcing
 
@@ -84,7 +84,7 @@ midwest is an example dataset included in the tidyverse package
 
 ## 2.2 Provide a short summary of the dataset(s)
 
-Dataset1 contains the procentual unemployment rate for 55 countries from 2005 to 2025. Dataset 2 contains the GDP per capita in USD adjusted by purchasing power parities. We have data for 56 countries for the years 2005 - 2024. For some countries we are missing some years of GDP and unemployment value.
+Dataset 1 contains the procentual unemployment rate for 55 countries from 2005 to 2025. Dataset 2 contains the GDP per capita in USD adjusted by purchasing power parities. We have data for 56 countries for the years 2005 to 2024. For some countries we are missing some years of GDP and unemployment value.
 
 ```{r}
 names(dataset1)
@@ -324,10 +324,29 @@ The line inside each box shows the median unemployment rate. The box itself show
 Analyze the relationship between two variables.
 
 ```{r analysis}
+library(ggplot2)
 
+merged_data$Value.x <- as.numeric(as.character(merged_data$Value.x))
+merged_data$Value.y <- as.numeric(as.character(merged_data$Value.y))
+
+ggplot(
+  merged_data,
+  aes(
+    x = log(Value.y),
+    y = Value.x
+  )
+) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(
+    title = "Relationship between GDP per Capita and Unemployment",
+    x = "Log GDP per Capita",
+    y = "Unemployment Rate (%)"
+  ) +
+  theme_minimal()
 ```
 
-Here you provide a description of why the plot above is relevant to your specific social problem.
+This figure shows the relationship between GDP per capita and unemployment rates. The downward trend line suggests a negative relationship between the two variables. In general, countries with a higher GDP per capita tend to have lower unemployment rates. This supports the idea that stronger economies often create more employment opportunities. However, the relationship is not perfect, which means that other factors also influence unemployment. This analysis is relevant because unemployment can contribute to poverty, financial insecurity, and social inequality.
 
 # Part 4 - Discussion
 
