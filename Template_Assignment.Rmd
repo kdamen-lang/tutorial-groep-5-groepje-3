@@ -374,7 +374,7 @@ Provide the link to your PUBLIC repository here: ...
 
 ## 5.2 Reference list
 
-**Okun, A. M.** (1962). Potential GNP: Its measurement and significance. *Proceedings of the Business and Economic Statistics Section of the American Statistical Association*, 98–104.
+Okun, A. M. (1962). Potential GNP: Its measurement and significance. *Proceedings of the Business and Economic Statistics Section of the American Statistical Association*, 98–104.
 
 Blanchard, O., Amighini, A., & Giavazzi, F. (2021).*Macroeconomics: a European perspective*(4th ed.) [Macroeconomics]. Pearson Education Limited.<https://www.pearson.com/uk>
 
