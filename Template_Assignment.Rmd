@@ -117,13 +117,13 @@ Think of things like:
 
 The dataset used in this project is a panel dataset, also known as cross-sectional time-series data. It contains observations for 55 countries across 21 time periods. The main variable of interest is the unemployment rate, measured as a percentage of the labour force. This is a continuous quantitative variable. Countries are identified using several country variables, including CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. The dataset also includes metadata variables, such as IndicatorCode, IndicatorName, VariableName, and MeasurementName. These variables provide information about what is being measured and how it is measured. The variable Value represents the unemployment rate and serves as the main dependent variable in the analysis.
 
-At this stage, the dataset only contains unemployment rates and does not include potential explanatory variables such as GDP growth, inflation, education levels, or labour market characteristics. **These aspects should be examined during the data exploration and cleaning phase before further statistical analysis is conducted.**
+At this stage, the dataset only contains unemployment rates and does not include potential explanatory variables such as GDP growth, inflation, education levels, or labour market characteristics.
 
 #### Data set 2
 
 The dataset used in this project is a panel dataset, also known as cross-sectional time-series data. It contains observations for 56 countries across 20 time periods from 2005 - 2024. The main variable of interest is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified using several country variables, including CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. The dataset also includes metadata variables, such as IndicatorCode, IndicatorName, VariableName, and MeasurementName. These variables provide information about what is being measured and how it is measured. The variable Value represents GDP per capita and is the main dependent variable in the analysis. CountryCode, Alpha3Code, and CountryName function as cross-sectional identifiers, while PeriodCode functions as the time variable. Most of these variables have been removed in the cleaning of the data.
 
-At this stage, while GDP per capita is available, the dataset does not provide additional explanatory variables that may influence economic performance. **These aspects should be examined during the data exploration and cleaning phase before further analysis is conducted.**
+At this stage, while GDP per capita is available, the dataset does not provide additional explanatory variables that may influence economic performance.
 
 # Part 3 - Quantifying
 
@@ -214,13 +214,17 @@ head(elasticity_table)
 ## 3.3 Visualize temporal variation
 
 ```{r}
+
 library(ggplot2)
 library(dplyr)
 
 plot_data <- elasticity_table %>%
   group_by(PeriodCode) %>%
   summarise(
+    # CHANGE 'Value.y' to whatever your actual GDP column is named
     `Avg GDP per Capita` = mean(Value.y, na.rm = TRUE), 
+    
+    # CHANGE 'Value.x' to whatever your actual Unemployment column is named
     `Avg Unemployment Rate` = mean(Value.x, na.rm = TRUE)
   ) %>%
   tidyr::pivot_longer(
@@ -242,7 +246,6 @@ ggplot(plot_data, aes(x = PeriodCode, y = Value, color = Metric)) +
   ) +
   theme_minimal() +
   theme(legend.position = "none")
-
 ```
 
 ## 3.4 Visualize spatial variation
@@ -288,23 +291,33 @@ This figure shows the differences in unemployment rates between countries. We ca
 
 What is the poverty rate by state?
 
-```{r visualise_subpopulations}
-dataset$inmetro <- dataset$inmetro %>% as.factor()
-# Boxplot of poverty rate by state using the 'midwest' dataset
-ggplot(dataset, aes(x = inmetro, y = percadultpoverty)) +
+```{r}
+
+boxplot_data <- elasticity_table %>%
+  filter(!is.na(Value.y), !is.na(Value.x)) %>%
+  mutate(
+    GDP_Group = ifelse(
+      Value.y >= median(Value.y, na.rm = TRUE),
+      "High GDP countries",
+      "Low GDP countries"
+    )
+  )
+
+ggplot(boxplot_data, aes(x = GDP_Group, y = Value.x)) +
   geom_boxplot() +
   labs(
-    title = "Distribution of Poverty Rates by Metropolitan status (Midwest counties)",
-    x = "Metropolitan Area",
-    y = "Poverty Rate of Adults (%)"
+    title = "Sub-population Variation: Unemployment in High- and Low-GDP Countries",
+    x = "GDP per Capita Group",
+    y = "Unemployment Rate (%)"
   ) +
-  theme_minimal() +
-  theme(
-    legend.position = "right"
-  )
+  theme_minimal()
 ```
 
-Here you provide a description of why the plot above is relevant to your specific social problem.
+This boxplot compares the distribution of unemployment rates between low-GDP and high-GDP countries. The countries are grouped based on whether their GDP per capita is below or above the median GDP per capita in the dataset.
+
+The main purpose of the graph is to see whether unemployment rates differ between richer and poorer countries. If the box for low-GDP countries is higher, it suggests that countries with lower GDP per capita generally have higher unemployment. If the high-GDP box is lower, this suggests that wealthier countries may have more stable labour markets.
+
+The line inside each box shows the median unemployment rate. The box itself shows the middle 50% of the observations. The lines extending from the box show the wider range of values, while individual dots represent possible outliers.
 
 ## 3.6 Event analysis
 
