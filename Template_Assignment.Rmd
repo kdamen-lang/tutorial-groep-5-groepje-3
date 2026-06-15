@@ -63,7 +63,6 @@ That is why it is important to conduct research to gain insight into the relatio
 That is why it is important to conduct research to gain insight into the relationship between unemployment and GDP. By examining this relationship, we can determine the extent to which economic growth contributes to increased employment. The findings could help policymakers to take measures that stimulate economic growth and also help to reduce unemployment. In this report we quantify the the relationship between the GDP per capita (*Gross Domestic Product (GDP) per Capita - Data Portal - United Nations Economic Commission for Europe*, n.d.) and the unemployment rate (*Unemployment Rate - Data Portal - United Nations Economic Commission for Europe*, n.d.) from 2005 until 2024.\
 \
 is gecheckt voor ai
->>>>>>> f021495f427710fa4f8c2d94472005711140398b
 
 # Part 2 - Data Sourcing
 
@@ -112,7 +111,7 @@ dim(dataset2)
 
 ```
 
-``` r
+```{r}
 inline_code = TRUE
 ```
 
@@ -126,9 +125,8 @@ Dataset1 is a panel dataset. It contains observations for 55 countries across ye
 
 #### **Data set 2**
 
-<<<<<<< HEAD
 Dataset 2 is also a panel dataset, containing observations for 56 countries across 20 time periods from 2005 - 2024. The main variable is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified in the same way as in Dataset1. The time dimension is represented by the variable PeriodCode. The dataset also includes metadata variables, such as IndicatorCode and IndicatorName. The latter defines what the variable Value is measuring, which is GDP per capita and is the mainvariable in this dataset. PeriodCode functions as the time variable. Most of these variables have been removed in the cleaning of the data.
-=======
+
 *For the sake of this example, I will continue with the assignment...*
 
 #### Data set 1
@@ -142,7 +140,6 @@ At this stage, the dataset only contains unemployment rates and does not include
 The dataset used in this project is a panel dataset, also known as cross-sectional time-series data. It contains observations for 56 countries across 20 time periods from 2005 - 2024. The main variable of interest is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified using several country variables, including CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. The dataset also includes metadata variables, such as IndicatorCode, IndicatorName, VariableName, and MeasurementName. These variables provide information about what is being measured and how it is measured. The variable Value represents GDP per capita and is the main dependent variable in the analysis. CountryCode, Alpha3Code, and CountryName function as cross-sectional identifiers, while PeriodCode functions as the time variable. Most of these variables have been removed in the cleaning of the data.
 
 At this stage, while GDP per capita is available, the dataset does not provide additional explanatory variables that may influence economic performance.
->>>>>>> 626f28b4466f65e1a03a1c33bd3ea9e9c11930ad
 
 # Part 3 - Quantifying
 
@@ -151,8 +148,6 @@ At this stage, while GDP per capita is available, the dataset does not provide a
 Say we want to include only larger distances (above 2) in our dataset, we can filter for this.
 
 The column Unnamed: 9 is empty and should be removed during the data-cleaning process.
-
-\<\<\<\<\<\<\< Updated upstream
 
 ```{r data_cleaning}
 
@@ -377,7 +372,7 @@ This figure shows the relationship between GDP per capita and unemployment rates
 
 Provide the link to your PUBLIC repository here: ...
 
-## 5.2 Reference list 
+## 5.2 Reference list
 
 **Okun, A. M.** (1962). Potential GNP: Its measurement and significance. *Proceedings of the Business and Economic Statistics Section of the American Statistical Association*, 98–104.
 
