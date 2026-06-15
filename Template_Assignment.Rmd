@@ -92,10 +92,6 @@ dataset2 <- read.csv("data/dataset2")
 
 ```
 
-.
-
-midwest is an example dataset included in the tidyverse package
-
 ## 2.2 Provide a short summary of the dataset(s)
 
 Dataset 1 contains the procentual unemployment rate for 55 countries from 2005 to 2025. Dataset 2 contains the GDP per capita in USD adjusted by purchasing power parities. We have data for 56 countries for the years 2005 to 2024. For some countries we are missing some years of GDP and unemployment value.
@@ -338,29 +334,41 @@ The line inside each box shows the median unemployment rate. The box itself show
 Analyze the relationship between two variables.
 
 ```{r analysis}
+library(dplyr)
 library(ggplot2)
 
-merged_data$Value.x <- as.numeric(as.character(merged_data$Value.x))
-merged_data$Value.y <- as.numeric(as.character(merged_data$Value.y))
+event_data <- merged_data %>%
+  mutate(
+    Value.x = as.numeric(as.character(Value.x)),
+    PeriodCode = as.numeric(as.character(PeriodCode))
+  ) %>%
+  group_by(PeriodCode) %>%
+  summarise(
+    Avg_Unemployment = mean(Value.x, na.rm = TRUE)
+  ) %>%
+  filter(PeriodCode >= 2006 & PeriodCode <= 2012)
 
-ggplot(
-  merged_data,
-  aes(
-    x = log(Value.y),
-    y = Value.x
-  )
-) +
-  geom_point(alpha = 0.5) +
-  geom_smooth(method = "lm", se = FALSE, color = "red") +
+ggplot(event_data, aes(x = PeriodCode, y = Avg_Unemployment)) +
+  geom_line(size = 1) +
+  geom_point(size = 3) +
+  geom_vline(xintercept = 2008, linetype = "dashed", color = "red") +
+  annotate(
+    "text",
+    x = 2008,
+    y = max(event_data$Avg_Unemployment, na.rm = TRUE),
+    label = "2008 financial crisis",
+    color = "red",
+    vjust = -0.5
+  ) +
   labs(
-    title = "Relationship between GDP per Capita and Unemployment",
-    x = "Log GDP per Capita",
-    y = "Unemployment Rate (%)"
+    title = "Unemployment Around the 2008 Financial Crisis",
+    x = "Year",
+    y = "Average Unemployment Rate (%)"
   ) +
   theme_minimal()
 ```
 
-This figure shows the relationship between GDP per capita and unemployment rates. The downward trend line suggests a negative relationship between the two variables. In general, countries with a higher GDP per capita tend to have lower unemployment rates. This supports the idea that stronger economies often create more employment opportunities. However, the relationship is not perfect, which means that other factors also influence unemployment. This analysis is relevant because unemployment can contribute to poverty, financial insecurity, and social inequality.
+This figure shows the average unemployment rate around the 2008 financial crisis. After 2008, unemployment increased noticeably in the countries included in the dataset. This suggests that the crisis may have had a negative impact on employment. The figure is relevant because higher unemployment can lead to poverty, financial insecurity, and a lower quality of life.
 
 # Part 4 - Discussion
 
