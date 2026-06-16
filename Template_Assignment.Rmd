@@ -62,8 +62,6 @@ That is why it is important to conduct research to gain insight into the relatio
 
 ## 2.1 Load in the data
 
-Preferably from a URL, but if not, make sure to download the data and store it in a shared location that you can load the data in from. Do not store the data in a folder you include in the Github repository!
-
 ```{r loading_data}
 
 
@@ -109,15 +107,20 @@ These are things that are usually included in the metadata of the dataset. For y
 
 ## 2.3 Describe the type of variables included
 
-The variables contain SES information. GDP per capita reflects economic performance and unemployment rate reflects the situation in the labour market. The data are drawn from administrative and statistical sources that have been compiled and made available via the UNECE database.
+The variables contain SES (socialeconomic status) information. GDP per capita reflects economic performance and unemployment rate reflects the situation in the labour market. The data are drawn from administrative and statistical sources that have been compiled and made available via the UNECE database.
 
-**Dataset 1**
+**Dataset 1** 
 
-Dataset 1 is a panel dataset. It contains observations for 55 countries from 2005 to 2025. The main variable is the unemployment rate, measured as the percentage of the labour force, shown as the variable value. This is a continuous quantitative variable. Countries are identified by several variables as CountryCode, Alpha3Code, and CountryName. The time dimension is represented by PeriodCode. Dataset 1 also includes metadata variables like IndicatorCode and VariableName. These variables give information about what is being measured and how it is measured.
+Dataset 1 is a panel dataset with measurements from 55 countries from 2005 to 2025.\
+The main variable is the unemployment rate, measured as a percentage of the total labour force. This is a continuous quantitative variable.\
+Countries are identified by categorical variables such as CountryCode and Alpha3Code. The variable PeriodCode is the identifier for the time dimension, shown in years.\
+The metadata variables, like Indicator Code and Variable name, are used to show what is being measured by set variables.
 
-#### **Dataset 2**
-
-Dataset 2 is also a panel dataset, containing observations for 56 countries from 2005 to 2024. The main variable is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable. Countries are identified in the same way as in Dataset 1. The time dimension is represented by the variable PeriodCode. The dataset also includes metadata variables, such as IndicatorCode and IndicatorName. The latter defines what the variable Value is measuring, which is GDP per capita and is the main variable in this dataset. PeriodCode functions as the time variable. Most of these variables have been removed during the data-cleaning process.
+**Dataset 2** \
+Dataset 2 is also a panel dataset, containing measurements from 56 countries from 2005 to 2024.\
+The main variable is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable.\
+Similar to Dataset 1, countries are identified by categorical variables and the PeriodCode tracks the time dimension.\
+The metadata variables, like Indicator Code and Variable name, are used to show what is being measured by set variables.
 
 # Part 3 - Quantifying
 
