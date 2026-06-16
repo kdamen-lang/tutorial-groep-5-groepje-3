@@ -107,7 +107,7 @@ These are things that are usually included in the metadata of the dataset. For y
 
 ## 2.3 Describe the type of variables included
 
-The variables contain SES (socialeconomic status) information. GDP per capita reflects economic performance and unemployment rate reflects the situation in the labour market. The data are drawn from administrative and statistical sources that have been compiled and made available via the UNECE database.
+The variables contain information about the socioeconomic status (SES) from citizens drawn from administrative and statistical sources from the UNECE database. GDP per capita reflects economic performance and unemployment rate reflects the situation in the labour market.
 
 **Dataset 1** 
 
@@ -119,7 +119,7 @@ The metadata variables, like Indicator Code and Variable name, are used to show 
 **Dataset 2** \
 Dataset 2 is also a panel dataset, containing measurements from 56 countries from 2005 to 2024.\
 The main variable is GDP per capita, measured in PPP-adjusted US dollars. This is a continuous quantitative variable.\
-Similar to Dataset 1, countries are identified by categorical variables and the PeriodCode tracks the time dimension.\
+Similar to dataset1, countries are identified by categorical variables and the PeriodCode tracks the time dimension.\
 The metadata variables, like Indicator Code and Variable name, are used to show what is being measured by set variables.
 
 # Part 3 - Quantifying
@@ -357,9 +357,11 @@ This figure shows the average unemployment rate around the 2008 financial crisis
 
 # Part 4 - Discussion
 
-## 4.1 Discuss your findings
+## 4.1 Discuss your findings 
 
-# Part 5 - Reproducibility
+In 3.6 where we analysed the event of our choosing, the 2008 financial crisis, it has become clear that after this event the unemployment skyrocketed. This makes sense with that we already know about this time period and the consequences from the financial crisis. It also makes sense from an economic view. Due to the crisis, consumers started consuming way less and businesses held back on their investments. Therefore the aggregated demand dropped massively, plummeting the GDP. According to Okun's law, for each reduction in GDP from its potential, the unemployment rate goes up. The reason why the unemployment rate kept rising after the initial crisis is because unemployment is a lagging economic indicator, meaning it changes after an event has taken place. In a crisis, businesses don't immediately fire everyone. They first cut back on working hours and wages, in the hope that the crisis will be averted soon. As the crisis worsens, mass layoffs begin. Therefore the unemployment rate continues to increase even after the GDP begins to climb up again.
+
+## 
 
 ## 5.1 Github repository link
 
