@@ -103,8 +103,6 @@ dim(dataset2)
 inline_code = TRUE
 ```
 
-These are things that are usually included in the metadata of the dataset. For your project, you need to provide us with the information from your metadata that we need to understand your dataset of choice.
-
 ## 2.3 Describe the type of variables included
 
 The variables contain information about the socioeconomic status (SES) from citizens drawn from administrative and statistical sources from the UNECE database. GDP per capita reflects economic performance and unemployment rate reflects the situation in the labour market.
@@ -125,10 +123,6 @@ The metadata variables, like Indicator Code and Variable name, are used to show 
 # Part 3 - Quantifying
 
 ## 3.1 Data cleaning
-
-Say we want to include only larger distances (above 2) in our dataset, we can filter for this.
-
-The column Unnamed: 9 is empty and should be removed during the data-cleaning process.
 
 ```{r data_cleaning}
 
