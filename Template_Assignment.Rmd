@@ -347,15 +347,6 @@ This figure shows the average unemployment rate around the 2008 financial crisis
 
 ## 4.1 Discuss your findings
 
-In 3.6 where we analysed the event of our choosing, the 2008 financial crisis, it has become clear that after this event the unemployment skyrocketed. \
-This makes sense with that we already know about this time period and the consequences of the financial crisis. It also makes sense from an economic view. Due to the crisis, consumers started consuming way less and businesses held back on their investments. Therefore the aggregated demand dropped massively, plummeting the GDP. According to Okun's law, for each reduction in GDP from its potential, the unemployment rate goes up. The reason why the unemployment rate kept rising after the initial crisis is because unemployment is a lagging economic indicator, meaning it changes after an event has taken place. In a crisis, businesses don't immediately fire everyone. They first cut back on working hours and wages, in the hope that the crisis will be averted soon. As the crisis worsens, mass layoffs begin. Therefore the unemployment rate continues to increase even after the GDP begins to climb up again.
-
-outsourcing .... vanaf x jaar zijn bedrijven meer werk gaan verplaatsen naar lageloonlanden
-
-discusieer de redenen waarom we dit hebben gezien
-
-we hebben alleen gekeken naar landelijk niveau maar niet naar regionale verschilen
-
 ## 
 
 ## 5.1 Github repository link
