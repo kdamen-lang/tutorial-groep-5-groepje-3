@@ -278,13 +278,9 @@ ggplot(
 
 ```
 
-Here you provide a description of why the plot above is relevant to your specific social problem.
-
 This figure shows the differences in unemployment rates between countries. We can see that unemployment is not the same everywhere. Countries such as North Macedonia, Bosnia and Herzegovina, and Georgia have much higher unemployment rates than other countries in the dataset. This is important for our social problem because high unemployment can lead to poverty, financial problems, and a lower quality of life. The graph shows that some countries are affected by unemployment much more than others.
 
 ## 3.5 Visualize sub-population variation
-
-What is the poverty rate by state?
 
 ```{r}
 
@@ -315,8 +311,6 @@ The main purpose of the graph is to see whether unemployment rates differ betwee
 The line inside each box shows the median unemployment rate. The box itself shows the middle 50% of the observations. The lines extending from the box show the wider range of values, while individual dots represent possible outliers.
 
 ## 3.6 Event analysis
-
-Analyze the relationship between two variables.
 
 ```{r analysis}
 library(dplyr)
@@ -359,7 +353,7 @@ This figure shows the average unemployment rate around the 2008 financial crisis
 
 ## 4.1 Discuss your findings
 
-In 3.6 where we analysed the event of our choosing, the 2008 financial crisis, it has become clear that after this event the unemployment skyrocketed. This makes sense with that we already know about this time period and the consequences from the financial crisis. It also makes sense from an economic view. Due to the crisis, consumers started consuming way less and businesses held back on their investments. Therefore the aggregated demand dropped massively, plummeting the GDP. According to Okun's law, for each reduction in GDP from its potential, the unemployment rate goes up. The reason why the unemployment rate kept rising after the initial crisis is because unemployment is a lagging economic indicator, meaning it changes after an event has taken place. In a crisis, businesses don't immediately fire everyone. They first cut back on working hours and wages, in the hope that the crisis will be averted soon. As the crisis worsens, mass layoffs begin. Therefore the unemployment rate continues to increase even after the GDP begins to climb up again.
+In 3.6 where we analysed the event of our choosing, the 2008 financial crisis, it has become clear that after this event the unemployment skyrocketed. This makes sense with that we already know about this time period and the consequences of the financial crisis. It also makes sense from an economic view. Due to the crisis, consumers started consuming way less and businesses held back on their investments. Therefore the aggregated demand dropped massively, plummeting the GDP. According to Okun's law, for each reduction in GDP from its potential, the unemployment rate goes up. The reason why the unemployment rate kept rising after the initial crisis is because unemployment is a lagging economic indicator, meaning it changes after an event has taken place. In a crisis, businesses don't immediately fire everyone. They first cut back on working hours and wages, in the hope that the crisis will be averted soon. As the crisis worsens, mass layoffs begin. Therefore the unemployment rate continues to increase even after the GDP begins to climb up again.
 
 ## 
 
