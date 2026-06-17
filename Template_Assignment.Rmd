@@ -347,7 +347,9 @@ This figure shows the average unemployment rate around the 2008 financial crisis
 
 ## 4.1 Discuss your findings
 
-## 
+Our analysis showed a generally negative relationship between GDP per capita and unemployment. Countries with a higher GDP per capita tended to have lower unemployment rates. We also observed that unemployment rates differed considerably between countries, with some countries consistently experiencing much higher unemployment than others. In addition, the 2008 financial crisis was followed by a noticeable increase in unemployment, suggesting that economic shocks can have a significant impact on labour markets. When GDP falls, economic activity decreases, causing firms to produce less and often reduce their workforce, which can lead to higher level of unemployment.
+
+A limitation of this study is that we only analysed data at the national level. Regional differences within countries were not included, even though unemployment and economic development can vary strongly between regions. Future research could examine these regional differences to gain a more detailed understanding of the relationship between GDP and unemployment.
 
 ## 5.1 Github repository link
 
