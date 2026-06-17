@@ -1,3 +1,7 @@
+---
+---
+---
+
 ------------------------------------------------------------------------
 
 title: "The relationship between GDP per Capita and Unemployment"
@@ -62,7 +66,7 @@ That is why it is important to conduct research to gain insight into the relatio
 
 ## 2.1 Load in the data
 
-```{r loading_data}
+```{r loading_data, echo=FALSE}
 
 
 #dataset1 <- read.csv("/Users/bakkertje/Downloads/data_20260609135240.csv")
