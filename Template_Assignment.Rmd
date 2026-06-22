@@ -357,7 +357,7 @@ A limitation of this study is that we only analysed data at the national level. 
 
 ## 5.1 Github repository link
 
-Provide the link to your PUBLIC repository here: \
+Provide the link to your PUBLIC repository here:\
 <https://github.com/kdamen-lang/tutorial-groep-5-groepje-3>
 
 ## 5.2 Reference list
