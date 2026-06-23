@@ -1,3 +1,4 @@
+
 ---
 title: "The Relationship Between GDP per Capita and Unemployment"
 
@@ -19,12 +20,6 @@ output:
   pdf_document:
     toc: true
     toc_depth: 2
----
-
-```{r, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-```
-
 ------------------------------------------------------------------------
 
 ```{r package_install, include=FALSE, eval=FALSE}
@@ -46,7 +41,7 @@ library(ggplot2)
 
 # Part 1 - Identify a Social Problem
 
-## 1.1 The Relationship Between GDP per capita and Unemployment
+## 1.1 The Relationship Between GDP Growth and Unemployment
 
 GDP is one of the most important economic indicators. It measures the total value of all goods and services produced within a country. Governments often use GDP as a measure of how well a society is doing.
 
@@ -58,7 +53,7 @@ That is why it is important to conduct research to gain insight into the relatio
 
 ## 2.1 Load in the data
 
-```{r loading_data, echo=FALSE}
+```{r loading_data}
 
 
 #dataset1 <- read.csv("/Users/bakkertje/Downloads/data_20260609135240.csv")
@@ -343,22 +338,21 @@ This figure shows the average unemployment rate around the 2008 financial crisis
 
 ## 4.1 Discuss your findings
 
-Performing our analysis showed us that there is generally a negative relationship between GDP per capita and the unemployment rate. It showed that countries with a higher GDP per capita were inclined to have lower unemployment rates. It also showed us that the unemployment rates could vary between countries, with certain countries consistently had much higher unemployment rates than other countries.
+Our analysis showed a generally negative relationship between GDP per capita and unemployment. Countries with a higher GDP per capita tended to have lower unemployment rates. We also observed that unemployment rates differed considerably between countries, with some countries consistently experiencing much higher unemployment than others. In addition, the 2008 financial crisis was followed by a noticeable increase in unemployment, suggesting that economic shocks can have a significant impact on labour markets. When GDP falls, economic activity decreases, causing firms to produce less and often reduce their workforce, which can lead to higher level of unemployment.
 
-Furthermore, the analysis of the 2008 financial crisis showed that the crisis was followed by an increase in unemployment, this suggest that an economic shock can impacts the labour market negatively. The consequence of a massive fall in GDP is a decrease in economic activity, leading to firms to produce less and demand for labour dropping. The decrease in demand for labour leads to a higher level of unemployment.
-
-Our analysis was conducted on a national level, therefore regional differences within a country where not shown. This limits our analysis, because unemployment an economic development can be vastly different in regions across a country. To improve future research, we could perform our analysis on a regional scale to gain a more detailed understanding of the relation between GDP per capita and the unemployment rate.
+A limitation of this study is that we only analysed data at the national level. Regional differences within countries were not included, even though unemployment and economic development can vary strongly between regions. Future research could examine these regional differences to gain a more detailed understanding of the relationship between GDP and unemployment.
 
 ## 5.1 Github repository link
 
-\
-<https://github.com/kdamen-lang/tutorial-groep-5-groepje-3>
+<https://github.com/kdamen-lang/tutorial-groep-5-groepje-3.git>
 
 ## 5.2 Reference list
 
 Blanchard, O., Amighini, A., & Giavazzi, F. (2021).*Macroeconomics: a European perspective*(4th ed.) [Macroeconomics]. Pearson Education Limited.<https://www.pearson.com/uk>
 
 *Gross domestic product (GDP) per capita - Data Portal - United Nations Economic Commission for Europe*. (n.d.-b).<https://w3.unece.org/PXWeb/en/Table?IndicatorCode=12>
+
+Okun, A. M. (1962). Potential GNP: Its measurement and significance. *Proceedings of the Business and Economic Statistics Section of the American Statistical Association*, 98–104.
 
 *Unemployment rate - Data Portal - United Nations Economic Commission for Europe*. (n.d.).<https://w3.unece.org/PXWeb/en/Table?IndicatorCode=43>\
 \
