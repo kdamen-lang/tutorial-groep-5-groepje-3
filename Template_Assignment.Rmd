@@ -51,7 +51,7 @@ Tutorial lecturer: Simon Loop
 
 # Part 1 - Identify a Social Problem
 
-## 1.1 The Relationship Between GDP Growth and Unemployment
+## 1.1 The Relationship Between GDP per capita and Unemployment
 
 GDP is one of the most important economic indicators. It measures the total value of all goods and services produced within a country. Governments often use GDP as a measure of how well a society is doing.
 
