@@ -1,8 +1,24 @@
 ---
-title: "The relationship between GDP per Capita and Unemployment"
-author: "Tutorial 5 group 3"
+title: "The Relationship Between GDP per Capita and Unemployment"
+
+author:
+  - "Koen Damen (2889378)"
+  - "Thomas Dop (2898269)"
+  - "Tim de Mare Oyens (2882348)"
+  - "Timo Bakker (2863621)"
+  - "Daniel Ferrier (2900731)"
+  - "Clémence van Gils (2898031)"
+
 date: "`r Sys.Date()`"
-output: pdf_document
+
+subtitle: |
+  Tutorial 5 Group 3
+  Tutorial lecturer: Simon Loop
+
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
 ---
 
 ```{r, include=FALSE}
@@ -10,8 +26,6 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 ------------------------------------------------------------------------
-
-# Set-up your environment
 
 ```{r package_install, include=FALSE, eval=FALSE}
 install.packages("tidyverse")
@@ -29,25 +43,6 @@ require(readxl)
 library(dplyr)
 library(ggplot2)
 ```
-
-# Quantifying a Social Problem - The Relationship Between GDP Growth and Unemployment
-
-Teammembers:\
-Koen Damen (2889378)
-
-Thomas Dop (2898269)
-
-Tim de Marez Oyens (2882348)
-
-Timo Bakker (2863621)
-
-Daniel Ferrier (2900731)
-
-Clémence van Gils (2898031)
-
-Tutorial 5 Group 3
-
-Tutorial lecturer: Simon Loop
 
 # Part 1 - Identify a Social Problem
 
@@ -142,7 +137,7 @@ merged_data <- inner_join(
 
 ```
 
-## 3.2
+## 3.2 variables
 
 Variable 1
 
