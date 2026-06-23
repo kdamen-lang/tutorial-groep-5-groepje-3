@@ -348,9 +348,11 @@ This figure shows the average unemployment rate around the 2008 financial crisis
 
 ## 4.1 Discuss your findings
 
-Our analysis showed a generally negative relationship between GDP per capita and unemployment. Countries with a higher GDP per capita tended to have lower unemployment rates. We also observed that unemployment rates differed considerably between countries, with some countries consistently experiencing much higher unemployment than others. In addition, the 2008 financial crisis was followed by a noticeable increase in unemployment, suggesting that economic shocks can have a significant impact on labour markets. When GDP falls, economic activity decreases, causing firms to produce less and often reduce their workforce, which can lead to higher level of unemployment.
+Performing our analysis showed us that there is generally a negative relationship between GDP per capita and the unemployment rate. It showed that countries with a higher GDP per capita were inclined to have lower unemployment rates. It also showed us that the unemployment rates could vary between countries, with certain countries consistently had much higher unemployment rates than other countries.
 
-A limitation of this study is that we only analysed data at the national level. Regional differences within countries were not included, even though unemployment and economic development can vary strongly between regions. Future research could examine these regional differences to gain a more detailed understanding of the relationship between GDP and unemployment.
+Furthermore, the analysis of the 2008 financial crisis showed that the crisis was followed by an increase in unemployment, this suggest that an economic shock can impacts the labour market negatively. The consequence of a massive fall in GDP is a decrease in economic activity, leading to firms to produce less and demand for labour dropping. The decrease in demand for labour leads to a higher level of unemployment.
+
+Our analysis was conducted on a national level, therefore regional differences within a country where not shown. This limits our analysis, because unemployment an economic development can be vastly different in regions across a country. To improve future research, we could perform our analysis on a regional scale to gain a more detailed understanding of the relation between GDP per capita and the unemployment rate.
 
 ## 5.1 Github repository link
 
