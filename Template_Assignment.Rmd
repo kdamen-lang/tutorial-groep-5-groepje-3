@@ -4,10 +4,12 @@ author: "Tutorial 5 group 3"
 date: "`r Sys.Date()`"
 output: pdf_document
 ---
+
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
----
+
+------------------------------------------------------------------------
 
 # Set-up your environment
 
@@ -352,7 +354,7 @@ A limitation of this study is that we only analysed data at the national level. 
 
 ## 5.1 Github repository link
 
-Provide the link to your PUBLIC repository here:\
+\
 <https://github.com/kdamen-lang/tutorial-groep-5-groepje-3>
 
 ## 5.2 Reference list
@@ -360,8 +362,6 @@ Provide the link to your PUBLIC repository here:\
 Blanchard, O., Amighini, A., & Giavazzi, F. (2021).*Macroeconomics: a European perspective*(4th ed.) [Macroeconomics]. Pearson Education Limited.<https://www.pearson.com/uk>
 
 *Gross domestic product (GDP) per capita - Data Portal - United Nations Economic Commission for Europe*. (n.d.-b).<https://w3.unece.org/PXWeb/en/Table?IndicatorCode=12>
-
-Okun, A. M. (1962). Potential GNP: Its measurement and significance. *Proceedings of the Business and Economic Statistics Section of the American Statistical Association*, 98–104.
 
 *Unemployment rate - Data Portal - United Nations Economic Commission for Europe*. (n.d.).<https://w3.unece.org/PXWeb/en/Table?IndicatorCode=43>\
 \
