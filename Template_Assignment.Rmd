@@ -30,7 +30,7 @@ library(dplyr)
 library(ggplot2)
 ```
 
-# Title Page
+# Quantifying a Social Problem - The Relationship Between GDP Growth and Unemployment
 
 Teammembers:\
 Koen Damen (2889378)
